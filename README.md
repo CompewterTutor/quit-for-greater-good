@@ -5,5 +5,5 @@
 ## Installation
 
 ## Usage
-
+docker-compose up --build
 ## Troubleshooting
