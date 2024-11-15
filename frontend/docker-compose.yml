@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  react-native:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"  # Metro bundler
+      - "3000:3000"  # Web (React)
+      - "19000:19000"  # Expo mobile app
+      - "19001:19001"  # Expo development mode
+    volumes:
+      - ./app:/usr/src/app
+    environment:
+      REACT_NATIVE_PACKAGER_HOSTNAME: 0.0.0.0
