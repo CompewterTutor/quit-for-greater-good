@@ -48,3 +48,18 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## DOCUMENTATION FOR DEPENDENCIES
+
+https://recoiljs.org/docs/introduction/installation
+
+https://docs.expo.dev
+
+https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
+
+## react native components
+https://reactnative.dev/docs/components-and-apis
+
+## REF
+https://blog.logrocket.com/full-stack-rust-a-complete-tutorial-with-examples/
+
