@@ -63,3 +63,43 @@ https://reactnative.dev/docs/components-and-apis
 ## REF
 https://blog.logrocket.com/full-stack-rust-a-complete-tutorial-with-examples/
 
+## Working with WSL
+
+### ADB
+adb kill-server
+adb -a nodaemon server start
+
+
+` sudo apt install -y socat `
+
+you can run the following under nohup to forward to bg
+Forward adb port 5037 in wsl 2
+```
+nohup socat TCP-LISTEN:5037,reuseaddr,fork TCP:$(cat /etc/resolv.conf | tail -n1 | cut -d " " -f 2):5037
+```
+Forward emulator port 5556 in wsl 2
+```
+nohup socat TCP-LISTEN:5556,reuseaddr,fork TCP:$(cat /etc/resolv.conf | tail -n1 | cut -d " " -f 2):5556
+```
+
+### Attaching USB to wsl2
+
+From 
+https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+https://devblogs.microsoft.com/commandline/connecting-usb-devices-to-wsl/#how-it-works
+
+
+Install USBIPD-WIN https://github.com/dorssel/usbipd-win/releases
+ In powershell admin:
+` usbipd list `
+
+next bind the device to use it, you need admin and you need to use the bus id from the previous command
+` usbipd bind --busid 4-4 `
+
+Then attach the device
+` usbipd attach --wsl --busid <busid> `
+
+and open wsl and list the attached device with ` lsusb `
+
+From powershell to detach with:
+` usbipd detach --busid <busid> `
