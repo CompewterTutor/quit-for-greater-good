@@ -1,3 +1,10 @@
+[package]
+name = "quit-for-greater-good"
+version = "0.1.0"
+edition = "2021"
+
 [dependencies]
-axum = "0.6"
 tokio = { version = "1", features = ["full"] }
+axum = "0.7.9"
+sqlx = { version = "0.8.2", features = ["runtime-tokio-native-tls", "postgres"] }
+dotenv = "0.15"
