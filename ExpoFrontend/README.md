@@ -65,6 +65,11 @@ https://blog.logrocket.com/full-stack-rust-a-complete-tutorial-with-examples/
 
 ## Working with WSL
 
+General Notes
+https://gist.github.com/bergmannjg/461958db03c6ae41a66d264ae6504ade
+
+
+
 ### ADB
 adb kill-server
 adb -a nodaemon server start
