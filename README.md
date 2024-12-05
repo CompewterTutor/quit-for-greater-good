@@ -37,10 +37,20 @@ Quit for greater good is a mobile and web application that helps users track the
 
 ## Technology Stack
 QFGG is created using Expo for the frontend and Rust for the backend. The database is postgresql.
+
+Frontend is Expo/React Native.
+
 ## Usage
 To create the server and database containers:
+Make sure you create an .env file in the backend folder based on the .env.sample file.
+Then build and make the image
 ```
 docker-compose up --build
+```
+
+To run the frontend
+```
+npx expo run android|ios 
 ```
 ## Troubleshooting
 
