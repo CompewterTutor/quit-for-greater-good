@@ -13,3 +13,5 @@
 
 ## REFERENCE
 
+Getting the adb to work in wsl
+
