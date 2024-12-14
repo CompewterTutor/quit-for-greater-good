@@ -1,19 +1,25 @@
-# Use the official Rust image as a base
 FROM rust:latest
 
-# Set the working directory inside the container
+# Set the working directory
 WORKDIR /usr/src/app
 
-# Copy the Cargo files and source code
+# Copy the Cargo files to cache dependencies
 COPY Cargo.toml Cargo.lock ./
+
+# Build dependencies to cache them
 RUN cargo build --release || true
+
+# Copy the application source code
 COPY . .
 
-# Build the application
+# Build the final application
 RUN cargo build --release
 
-# Expose the application port
+# Ensure the binary is executable
+RUN chmod +x ./target/release/quit-for-greater-good
+
+# Expose the server's port
 EXPOSE 8080
 
-# Command to run the server
+# Run the application
 CMD ["./target/release/quit-for-greater-good"]

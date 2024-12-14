@@ -15,3 +15,7 @@
 
 Getting the adb to work in wsl
 
+### Installing diesel cli
+
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/diesel-rs/diesel/releases/latest/download/diesel_cli-installer.sh | sh
+
