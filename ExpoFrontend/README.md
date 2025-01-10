@@ -51,14 +51,51 @@ Join our community of developers creating universal apps.
 
 ## DOCUMENTATION FOR DEPENDENCIES
 
+### React Native
+https://reactnative.dev/blog/2024/10/23/the-new-architecture-is-here
+https://github.com/a0m0rajab/rnr-base-bare
+
+
+### State Management
 https://recoiljs.org/docs/introduction/installation
 
+
+### Auth
 https://docs.expo.dev
+https://github.com/FormidableLabs/react-native-app-auth
+https://docs.expo.dev/guides/authentication/
+https://docs.expo.dev/versions/latest/sdk/apple-authentication/
+https://docs.expo.dev/guides/facebook-authentication/
+https://docs.expo.dev/guides/authentication/#github
+https://docs.expo.dev/guides/google-authentication/
+https://docs.expo.dev/guides/authentication/#reddit
+https://docs.expo.dev/guides/authentication/#twitter
+https://docs.expo.dev/guides/authentication/#spotify
+
+https://reactnative.dev/docs/security
+https://frontegg.com/blog/react-native-authentication
 
 https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/
 
-## react native components
+### Styling
+https://rnr-docs.vercel.app/getting-started/initial-setup/
+https://tailwindcss.com/docs/responsive-design
+https://rnr-docs.vercel.app/getting-started/common-patterns/
+https://www.tailwind-variants.org/
+https://www.nativewind.dev/guides/component-libraries
+https://www.nativewind.dev/getting-started/expo-router
+
+### react native components
 https://reactnative.dev/docs/components-and-apis
+https://reactnavigation.org/docs/drawer-based-navigation/
+https://react-hook-form.com/get-started#ReactNative
+https://tanstack.com/table/latest
+https://github.com/adebayoileri/universal-bottom-sheet
+https://github.com/react-native-datetimepicker/datetimepicker
+https://www.npmjs.com/package/burnt
+
+### Native Component Dev
+https://github.com/callstack/react-native-builder-bob
 
 ## REF
 https://blog.logrocket.com/full-stack-rust-a-complete-tutorial-with-examples/
