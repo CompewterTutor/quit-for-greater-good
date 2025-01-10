@@ -1,7 +1,7 @@
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { Card } from '@/components/ui/card';
-import UserCard from '@/components/userCard';
+// import { Card } from '@/components/ui/card';
+import UserCard from '@/components/UserCard';
 import { Stack, useLocalSearchParams } from 'expo-router';
 
 import { Image, StyleSheet, Text } from 'react-native';
