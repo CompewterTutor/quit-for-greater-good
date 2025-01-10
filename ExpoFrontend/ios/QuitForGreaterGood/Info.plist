@@ -27,14 +27,14 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>myapp</string>
-          <string>com.anonymous.QuitFGGood</string>
+          <string>quitforgreatergood</string>
+          <string>com.quitforgreatergood</string>
         </array>
       </dict>
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>exp+quitfggood</string>
+          <string>exp+quitforgreatergood</string>
         </array>
       </dict>
       <dict>

@@ -24,7 +24,7 @@ sudo apt install -y adb
 Currently I'm building on Android 15 - which is api version 35.
 To install this through the commandline:
 ```
-sdkmanager "
+sdkmanager "emulator" "platform-tools" "platforms;android-35" "build-tools;35.0.0"
 ```
 
 Installing the emulator
@@ -52,6 +52,17 @@ To run the frontend
 ```
 npx expo run android|ios 
 ```
+
+## Signing
+
+For google oauth
+```
+keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000
+``` 
+cd android && ./gradlew signingReport
+```
+
+
 ## Troubleshooting
 
 

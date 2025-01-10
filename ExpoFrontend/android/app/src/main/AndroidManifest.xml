@@ -24,9 +24,9 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="myapp"/>
-        <data android:scheme="com.anonymous.QuitFGGood"/>
-        <data android:scheme="exp+quitfggood"/>
+        <data android:scheme="quitforgreatergood"/>
+        <data android:scheme="com.quitforgreatergood"/>
+        <data android:scheme="exp+quitforgreatergood"/>
       </intent-filter>
     </activity>
   </application>

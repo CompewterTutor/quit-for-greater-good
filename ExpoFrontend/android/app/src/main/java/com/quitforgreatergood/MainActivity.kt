@@ -1,4 +1,4 @@
-package com.anonymous.QuitFGGood
+package com.quitforgreatergood
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

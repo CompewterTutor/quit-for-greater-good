@@ -1,23 +1,23 @@
 {
   "expo": {
     "name": "Quit For Greater Good",
-    "slug": "QuitFGGood",
+    "slug": "QuitForGreaterGood",
     "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "quitforgreatergood",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.QuitFGGood"
+      "bundleIdentifier": "com.quitforgreatergood"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.QuitFGGood"
+      "package": "com.quitforgreatergood"
     },
     "web": {
       "bundler": "metro",
