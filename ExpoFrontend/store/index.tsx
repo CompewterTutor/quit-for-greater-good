@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { persistStore } from "redux-persist";
 import { Provider } from "react-redux";
-import rootReducer from "./ConfigureStore";
+import rootReducer from "@/store/ConfigureStore";
 
 const store = configureStore({
   reducer: rootReducer,

@@ -8,5 +8,6 @@ const {
   
 /** @type {import('expo/metro-config').MetroConfig} */
 const config = getDefaultConfig(__dirname);
-
-module.exports = withNativeWind(wrapWithReanimatedMetroConfig(config), {input: "./global.css"});
+const configReanimated = wrapWithReanimatedMetroConfig(config);
+const configNativeWind = withNativeWind(configReanimated, {input: "./global.css"});
+module.exports = configNativeWind;
