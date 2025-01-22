@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStorageState } from './useStorageState';
-// import { supabase } from '@/utils/supabase';
+import { supabase } from '@/utils/supabase';
 
 const AuthContext = React.createContext<{
   signIn: (email:string,password:string) => void | any;
@@ -35,23 +35,23 @@ export function SessionProvider(props: React.PropsWithChildren) {
     <AuthContext.Provider
       value={{
         signIn: async (email: string, password: string) => {
-        //   const { error, data } = await supabase.auth.signInWithPassword({
-        //     email,
-        //     password,
-        //   })
-        //   if (error) {
-        //     console.log(error)
-        //     return {
-        //       error,
-        //     }
-        //   }
+          const { error, data } = await supabase.auth.signInWithPassword({
+            email,
+            password,
+          })
+          if (error) {
+            console.log(error)
+            return {
+              error,
+            }
+          }
           // Perform sign-in logic here
-        //   setSession(JSON.stringify(data?.session));
-        //   setUser(JSON.stringify(data?.user));
+          setSession(JSON.stringify(data?.session));
+          setUser(JSON.stringify(data?.user));
           return true;
         },
         signOut: () => {
-        //   supabase.auth.signOut();
+          supabase.auth.signOut();
           setSession(null);
         },
         session,
