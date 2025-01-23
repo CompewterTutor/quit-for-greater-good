@@ -24,6 +24,9 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "experiments": {
+      "typedRoutes": true
+    },
     "plugins": [
       [
         "expo-splash-screen",
@@ -40,9 +43,6 @@
           "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
         }
       ]
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    ]
   }
 }
